@@ -1,0 +1,329 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #193940;
+
+}
+
+
+
+
+
+/* navbarrrrrrrrrr */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f582d;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ }
+ .username{
+    max-width: 300px;
+    cursor: pointer;
+    transition: 0.5ms;
+   
+ }
+ .username:hover{
+    border-radius: 20px;
+    background-color: #19394060;
+    transition: ease-in-out;
+ }
+ 
+ .user{
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 300px;
+ }
+ 
+ .user p {
+    color: #fff;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 500;
+ }
+ 
+ .userpic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+ }
+ 
+ @media (max-width: 600px) {   
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+    .username {
+        margin-top: 10px; /* Spacing for mobile layout */
+    }
+ }
+ 
+ .logout{
+    margin-top: 10px;
+    display: none;
+    position: fixed;
+    background-color: #193940;
+    max-width: 300px;
+    min-width: 100px;
+    min-height: 50px;
+    display: flex; 
+    align-items: center;
+    transition: ease-in-out;
+    border-radius: 20px;
+    align-self: center;
+ }
+ .logout:hover{
+    background-color: #f66940;
+ }
+ .logout > a{   
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+   
+ }
+ 
+ 
+ 
+ /* Logo Styles */
+ .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    cursor: pointer;
+
+ }
+ 
+ 
+ .logo > h1 {
+    font-size: 18px; /* Removed space before 'px' */
+    font-weight: bold;
+    
+ }
+ 
+ .logo > img {
+    border-radius: 50%;
+    height: 50px;
+    background-color: #fff;
+ }
+ 
+
+
+
+
+
+
+
+ 
+
+ /* side */
+.sidebar{
+    position: fixed;
+    top: 65px;
+    text-align: center;
+    background-color: #1f582d;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    min-width: 200px;
+}
+
+.sidebar-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: #bac8d9;
+    border-bottom-width: 1px;
+}
+.menu-link{
+    width: 100%;
+    background-color:transparent; /* Bootstrap blue */
+    color: #fff;
+    padding: 15px 10px 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    text-align: start;
+}
+.menu-link:hover{
+    background-color: #134720; /* Darker blue on hover */
+}
+
+.menuitem{
+    width: 100%;
+    background-color:transparent; /* Bootstrap blue */
+    color: #fff;
+    padding: 15px 10px 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    text-align: start;
+}
+
+.menuitem:hover{
+    background-color: #134720; /* Darker blue on hover */
+}
+
+.submenu {
+    display: none; /* Initially hidden */
+    
+    background-color: #134720;
+}
+
+.subitem {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.subitem:hover {
+    background-color: #2b693a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cooooooooonnnnnnnnnnttttttteeeeeeeennnnnnnntttttttttt */
+.container {
+    margin-top: 65px;
+    margin-left: 220px;
+    background-color: #e7e9ec; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 2000px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+    color: #2d693c; /* Primary color for the heading */
+}
+
+h2 {
+    margin-top: 30px; /* Space above section titles */
+    color: #333; /* Darker color for section titles */
+}
+
+table {
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for cleaner look */
+    margin-top: 10px; /* Space above the table */
+}
+
+thead {
+    background-color: #2d693c; /* Header background color */
+    color: white; /* Header text color */
+}
+
+th, td {
+    padding: 10px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light gray border below rows */
+}
+
+
+
+/* SEARCH BARRRR */
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px;
+    width: min-content; /* Fixed width for search input */
+    
+}
+
+.search-bar input[type="text"]:focus{
+    border-color: #1f582d; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    transition: ease-in-out 0.03;
+    
+}
+
+.search-bar select {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px;
+    margin-left: 10px; /* Spacing between input and selects */
+    
+}
+
+.search-bar select:focus{
+    border-color: #1f582d; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    
+}
+.search-bar button {
+    padding: 10px 15px;
+    background-color:#2d693c; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-bar button:hover {
+    background-color: #1f582d; /* Darker shade on hover */
+    
+}
+
+
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+
+

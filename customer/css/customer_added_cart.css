@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #193940;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 65px;
+    margin-left: 220px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    padding-bottom: 80px;
+    min-height: calc(100vh - 100px); /* Ensure the content takes up at least the full height minus fixed header */
+}
+
+.container h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2d693c;
+}
+
+.empty-cart-message {
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+/* Floating Checkout Button */
+.checkoutbottom {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px; /* Limit the width for better mobile view */
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 12px 25px;
+    background-color:#28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.checkout-button:hover {
+    background-color: #1f8a38;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+
+.group-header {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+}
+
+.select-all-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.select-all-container input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+
+
+.product-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+}

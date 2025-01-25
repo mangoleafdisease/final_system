@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #193940;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-left: 220px;
+    margin-top: 65px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: calc(820px - 120px); /* Better height handling */
+    overflow-y: auto;
+    min-height: calc(100vh - 120px);
+}
+
+/* Responsive Typography */
+.container h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2d693c;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    word-wrap: break-word;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.order-details {
+    margin-top: 20px;
+}
+
+.order-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.empty-history-message {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+}
+
+.status-paid {
+    color: green;
+    font-weight: bold;
+}
+
+.status-unpaid {
+    color: red;
+    font-weight: bold;
+}
+
+.status-received {
+    color: green;
+    font-weight: bold;
+}
+
+.status-not-received {
+    color: red;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 18px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+
+    .order-header {
+        font-size: 14px;
+    }
+}

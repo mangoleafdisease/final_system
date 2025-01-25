@@ -1,0 +1,22 @@
+ALTER TABLE `inventory`
+ADD COLUMN `new_price` decimal(10,2) NOT NULL AFTER `price`,
+ADD COLUMN `price_updated_at` datetime DEFAULT CURRENT_TIMESTAMP AFTER `new_price`;
+
+
+CREATE TABLE `items_sold` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` int(11) NOT NULL, -- Link to the customer_orders table
+  `item_id` int(11) NOT NULL, -- Link to the inventory or order_items table
+  `item_name` varchar(255) NOT NULL,
+  `size` varchar(50) DEFAULT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `total_price` decimal(10,2) NOT NULL,
+  `customer_id` int(11) NOT NULL, -- Link to the customer
+  `customer_name` varchar(255) NOT NULL,
+  `sold_date` timestamp DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `inventory`
+`total_price` decimal(10,2) NOT NULL,

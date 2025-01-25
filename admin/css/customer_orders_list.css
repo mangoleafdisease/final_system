@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #193940;
+
+}
+
+/* connnntennnnnnttttt */
+.container {
+    position: relative;
+    margin-top: 65px;
+    margin-left: 220px;
+    background-color: #e7e9ec; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+}
+
+.toplabel {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+.toplabel > h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2d693c; /* Primary color for the heading */
+    margin-bottom: 10px;
+}
+
+.toplabel > p {
+    color: #9c9c9c;
+    font-weight: 400;
+}
+
+.container > hr {
+    margin-bottom: 20px;
+}
+
+
+    /* Search Bar */
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .search-bar-box{
+        width: 70%;
+    }
+
+    .search-input {
+        width: 60%;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
+
+    .search-input:focus {
+        border-color: #1f582d;
+    }
+
+    .search-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #1f582d;
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .search-button:hover {
+        background-color: #307e43;
+    }
+
+    /* Order Cards */
+    .order-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .order-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .order-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 10px;
+    }
+
+    .order-header h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #1f582d;
+    }
+
+    .order-details p {
+        margin: 5px 0;
+        color: #555;
+    }
+
+    /* Table Styles */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #1f582d;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    td {
+        background: #f9f9f9;
+    }
+
+    tr:nth-child(even) td {
+        background: #f2f2f2;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .btn-success {
+        background-color: #1f582d;
+        color: white;
+    }
+
+    .btn-success:hover {
+        background-color: #163f20;
+    }
+
+    .btn-update {
+        background-color: #1f582d;
+        color: white;
+    }
+
+    .btn-update:hover {
+        background-color: #12411d;
+    }
+
+    .btn-danger {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    .btn-danger:hover {
+        background-color: #c0392b;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .search-input {
+            width: 80%;
+        }
+
+        .order-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .order-header h3 {
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+    /* Status Circle Styles */
+    .status-circle {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .status-circle.paid {
+        background-color: #2ecc71; /* Green for Paid */
+    }
+
+    .status-circle.unpaid {
+        background-color: #e74c3c; /* Red for Unpaid */
+    }
+
+
+
+.readyto{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #d3471c;
+}
+
+/* Hide the button when it's disabled */
+button[disabled] {
+    display: none;
+    /* Optionally, you could style it to look like a label if you want to display text */
+    background-color: transparent;
+    border: none;
+    color: #888;
+}

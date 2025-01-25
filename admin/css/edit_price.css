@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #193940;
+
+}
+
+/* connnntennnnnnttttt */
+.container {
+    position: relative;
+    margin-top: 65px;
+    margin-left: 220px;
+    background-color: #e7e9ec; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: auto;
+}
+
+
+
+.toplabel {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+.toplabel > h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2d693c; /* Primary color for the heading */
+    margin-bottom: 10px;
+}
+
+.toplabel > p {
+    color: #9c9c9c;
+    font-weight: 400;
+}
+
+.container > hr {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------- */
+.white_container{
+    background-color: white;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.inventory-table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+.inventory-table th, .inventory-table td {
+    padding: 10px;
+    border: 1px solid #084416;
+    text-align: left;
+}
+
+.inventory-table th {
+    background-color: #1f582d;
+    color: white;
+}
+
+.inventory-table tbody td {
+    background-color: #f2f2f2;
+}
+
+.inventory-table td button {
+    padding: 5px 10px;
+    background-color: #1f582d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inventory-table td button:hover {
+    background-color: #123b1c;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Set width of the modal */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1f582d;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d3a18;
+}
+
+.confirm-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirm-modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirm-modal button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.confirm-modal button.cancel {
+    background-color: #dc3545;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #28a745;
+    margin-top: 20px;
+}
